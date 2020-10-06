@@ -1,0 +1,39 @@
+@font-face{
+    font-family: 'sf-compact';
+    font-weight: bold;;
+    src : url('../../assets/fonts/SF-Compact-Display-Bold.otf')
+}
+@font-face{
+    font-family: 'sf-compact';
+    font-weight: regular;;
+    src : url('../../assets/fonts/SF-Compact-Display-regular.otf')
+}
+
+*{
+    font-family: 'sf-compact' !important;
+}
+
+$red : red;
+$white : #fff;
+
+button{
+    width: 15rem;
+    height: 4rem;
+    color: $red;
+    background: $white;
+    border:.2rem solid $red ;
+    font-weight: bold;
+}
+
+@media all and (max-width: 480px) {
+    button{
+        width: 7rem;
+        height: 3rem;
+    }
+    h1{
+        font-size: 1rem;
+    }
+    h6{
+        font-size: .6rem;
+    }
+  }

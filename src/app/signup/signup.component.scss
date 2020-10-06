@@ -1,0 +1,72 @@
+@font-face{
+    font-family: 'sf-compact';
+    font-weight: bold;;
+    src : url('../../assets/fonts/SF-Compact-Display-Bold.otf')
+}
+@font-face{
+    font-family: 'sf-compact';
+    font-weight: regular;;
+    src : url('../../assets/fonts/SF-Compact-Display-regular.otf')
+}
+
+p,h3,button,input,label{
+    font-family: 'sf-compact' !important;
+}
+
+$darkgrey : #454c50;
+$grey : #a0a0a0;
+$white : #ffffff;
+$red : red;
+
+.text-white{
+    color:white;
+}
+
+a > i{
+    color:$red;
+}
+
+h3{
+    color:$grey;
+    font-size: 1.6rem;
+    font-weight: regular;
+}
+
+.form-group{
+    input{
+        height: 4rem;
+    }
+    input.ng-invalid.ng-touched{
+        border:1px solid $red;
+    }
+    label{
+        font-size: .7rem;
+        font-weight: bold;
+        color: $grey;
+    }
+}
+
+
+button{
+    width: 15rem;
+    height: 4rem;
+    color: $red;
+    background: $white;
+    border:.2rem solid $red ;
+    font-weight: bold;
+}
+
+@media all and (max-width: 480px) {
+    button{
+        width: 7rem;
+        height: 3rem;
+    }
+    h3{
+        font-size: .8rem;
+    }
+    .form-group{
+        input{
+            height: 3rem;
+        }
+    }
+  }
